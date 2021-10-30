@@ -78,18 +78,12 @@ int main(void)
         {
             for (int j = 0; j < n; j++)
             {
-                if (age[i][j] == 0)
+                if (age[i][j] == -1)
                 {
                     cout << -1;
                     return 0;
                 }
-                else
-                {
-                    if (ans < age[i][j])
-                    {
-                        ans = age[i][j];
-                    }
-                }
+                ans = max(ans, age[i][j]); // 알고리즘
             }
         }
     }
