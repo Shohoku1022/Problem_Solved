@@ -1,3 +1,4 @@
+// 스택 수열
 #include <bits/stdc++.h>
 using namespace std;
 
